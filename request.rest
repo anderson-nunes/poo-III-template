@@ -1,0 +1,28 @@
+GET http://localhost:3003/users
+###
+
+POST http://localhost:3003/users
+Content-Type: application/json
+
+  {
+    "id": "006",
+    "name": "André",
+    "email": "andre@email.com",
+    "password": "80239212"
+  }
+###
+
+
+GET http://localhost:3003/accounts
+###
+
+GET http://localhost:3003/accounts/a001/balance
+###
+
+POST http://localhost:3003/accounts
+Content-Type: application/json
+
+  {
+    "id": "a003",
+    "owner_id": "u003"
+  }
